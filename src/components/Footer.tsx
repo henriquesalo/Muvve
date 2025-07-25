@@ -60,9 +60,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-background/20 pt-8 text-center text-background/60">
           <p className="flex items-center justify-center">
-            © {currentYear} - Muvve. Feito com{" "}
-            <Heart className="mx-1 text-blue-500" size={16} fill="currentColor" />
-            e muita tecnologia by Henrique Salomão.
+            © {currentYear} - Muvve. All Rights Reserved.
           </p>
         </div>
       </div>
