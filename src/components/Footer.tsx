@@ -1,4 +1,5 @@
 import { Mail, Instagram, Heart } from "lucide-react";
+import Logo from "@/assets/Muvve-Logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

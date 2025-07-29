@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+import Logo from "@/assets/Muvve-Logo.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,9 +19,11 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            MUVVE
-          </div>
+          <img src={Logo} 
+            alt="Muvve Logo" 
+            onClick={() => scrollToSection('inicio')}
+            className="h-6 w-auto cursor-pointer" 
+          />
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
