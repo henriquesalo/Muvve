@@ -49,12 +49,20 @@ const Services = () => {
       features: ["Workflows", "Integrações", "APIs", "Robôs"]
     }
   ];
-
+  /*
   const scrollToAbout = () => {
     const element = document.getElementById('sobre');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+  */
+ 
+  const goToWhatsApp = () => {
+    const phoneNumber = "+5561998222358";
+    const message = "Olá, estou interessado em saber mais sobre os serviços.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
 
   return (
@@ -96,7 +104,7 @@ const Services = () => {
                 <Button 
                   variant="outline" 
                   className="w-full group-hover:border-primary group-hover:text-primary"
-                  onClick={scrollToAbout}
+                  onClick={goToWhatsApp}
                 >
                   Saiba Mais
                   <ArrowRight size={16} className="ml-2" />
